@@ -9,5 +9,7 @@ rem Delete old files
 rmdir /Q /S bin
 rmdir /Q /S obj
 
+set msbuild="C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe"
+
 rem Build Solution
-if %omitbad%==true (msbuild -p:DefineConstants=OMITBAD) else (if %omitgood%==true (msbuild -p:DefineConstants=OMITGOOD) else (msbuild))
+if %omitbad%==true (%msbuild% -p:DefineConstants=OMITBAD) else (if %omitgood%==true (%msbuild% -p:DefineConstants=OMITGOOD) else (%msbuild%))
