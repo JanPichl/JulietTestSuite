@@ -1,14 +1,17 @@
 #
 # Example that shows how to run an analysis with an example tool.
 #
-# This script uses the run_analysis method from py_common.  The run_analysis method
-# script finds all the build.xml files and then passes them to the function defined
+# This script uses the run_analysis method from py_common.  The run_analysis
+# method
+# script finds all the build.xml files and then passes them to the function
+# defined
 # in this file.
 #
 # In this case, we compile each CWE's testcases using the ant build.xml file.
 #
-
-import sys, re, os
+import sys
+import re
+import os
 
 # add parent directory to search path so we can use py_common
 sys.path.append("..")
@@ -41,9 +44,21 @@ def run_example_tool(bat_file):
 	py_common.print_with_timestamp("Running " + command2)
 	py_common.run_commands([command2])
 	"""
-  
-	# The code below will just run ant to compile the test cases without using a tool
-	# Remove or comment out this code when modifying this file to use an analysis tool
+
+	msbuildPath = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe"
+	solutionPath = "D:\\GitHub\\MyGit\\JulietTestSuite\\Example\\Example.csproj"
+	parameter="-p:Configuration=Release"
+
+	command1 = msbuildPath + " " + solutionPath+ " "+ parameter
+   
+	py_common.print_with_timestamp("Running " + command1)
+	
+	py_common.run_commands([command1])
+
+	# The code below will just run ant to compile the test cases without using a
+	# tool
+	# Remove or comment out this code when modifying this file to use an analysis
+	# tool
 	command = bat_file
 
 	py_common.print_with_timestamp("Running " + command)
