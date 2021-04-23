@@ -129,6 +129,8 @@ def write_file(filename, contents):
 	"""
 	Write contents to file.
 	"""
+	filename = filename.replace(os.sep, '/')
+	filename  = os.path.normpath(os.path.abspath(filename))
 	with open(filename, 'w') as f:
 		f.write(contents)
 
