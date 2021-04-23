@@ -4,13 +4,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f9a06123-ede8-48c6-989f-4511c091176f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Script.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <StartupFile>..\Juliet_Test_Suite_v1.3_for_C#\create_per_cwe_files.py</StartupFile>
+    <SearchPath>..\Juliet_Test_Suite_v1.3_for_C#;..\Juliet_Test_Suite_v1.3_for_C#;..\Juliet_Test_Suite_v1.3_for_C#;..\Juliet_Test_Suite_v1.3_for_C#</SearchPath>
+    <WorkingDirectory>..\Juliet_Test_Suite_v1.3_for_C#</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Script</Name>
     <RootNamespace>Script</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +24,45 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Script.py" />
+    <Compile Include="..\Juliet_Test_Suite_v1.3_for_C#\create_per_cwe_files.py">
+      <Link>create_per_cwe_files.py</Link>
+    </Compile>
+    <Compile Include="..\Juliet_Test_Suite_v1.3_for_C#\py_common.py">
+      <Link>py_common.py</Link>
+    </Compile>
+    <Compile Include="..\Juliet_Test_Suite_v1.3_for_C#\run_analysis_example_tool.py">
+      <Link>run_analysis_example_tool.py</Link>
+    </Compile>
+    <Compile Include="..\Juliet_Test_Suite_v1.3_for_C#\update_csharp_templates.py">
+      <Link>update_csharp_templates.py</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Juliet_Test_Suite_v1.3_for_C#\App.config.template">
+      <Link>Template\App.config.template</Link>
+    </Content>
+    <Content Include="..\Juliet_Test_Suite_v1.3_for_C#\AssemblyInfo.cs.template">
+      <Link>Template\AssemblyInfo.cs.template</Link>
+    </Content>
+    <Content Include="..\Juliet_Test_Suite_v1.3_for_C#\Build.bat.template">
+      <Link>Template\Build.bat.template</Link>
+    </Content>
+    <Content Include="..\Juliet_Test_Suite_v1.3_for_C#\Main.csproj.template">
+      <Link>Template\Main.csproj.template</Link>
+    </Content>
+    <Content Include="..\Juliet_Test_Suite_v1.3_for_C#\Main.sln.template">
+      <Link>Template\Main.sln.template</Link>
+    </Content>
+    <Content Include="..\Juliet_Test_Suite_v1.3_for_C#\Program.cs.template">
+      <Link>Template\Program.cs.template</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Template\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+    <InterpreterReference Include="Global|PythonCore|3.9" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JulietTestSuite", "JulietTestSuite\JulietTestSuite.csproj", "{AA84FE57-8123-4C95-A8CB-66DE9A9047E0}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Script", "Script\Script.pyproj", "{F9A06123-EDE8-48C6-989F-4511C091176F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{E1785EEC-53D0-4C94-A48F-0C6600390131}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AA84FE57-8123-4C95-A8CB-66DE9A9047E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA84FE57-8123-4C95-A8CB-66DE9A9047E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA84FE57-8123-4C95-A8CB-66DE9A9047E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA84FE57-8123-4C95-A8CB-66DE9A9047E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A06123-EDE8-48C6-989F-4511C091176F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A06123-EDE8-48C6-989F-4511C091176F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1785EEC-53D0-4C94-A48F-0C6600390131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1785EEC-53D0-4C94-A48F-0C6600390131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1785EEC-53D0-4C94-A48F-0C6600390131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1785EEC-53D0-4C94-A48F-0C6600390131}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
